@@ -1,0 +1,21 @@
+-
+ name: This playbook will install nginx
+ hosts: servers
+ become: yes
+ tasks:
+  - name: install nginx
+    apt:
+      name: nginx
+      state: latest
+  - name: start nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes
+  - name: Deploy sample webpage
+    copy:
+      src: /home/ubuntu/ansible/index.html
+      dest: /var/www/html/index.html
+    become: true
+    become_user: root
+    become_method: sudo
