@@ -33,9 +33,8 @@ For more detailed instructions and insights, refer to the accompanying [blog pos
 ## File Structure 📁
 
 - `nginx-playbook.yml`: Ansible playbook file for installing Nginx and deploying the solar system webpage.
-- `index.html`: HTML file for the captivating solar system webpage.
+- `index.html`: HTML file for the solar system webpage.
 
 ## Contributing 🤝
 
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request. 🙌
-```
